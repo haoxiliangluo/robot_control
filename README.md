@@ -1,5 +1,3 @@
-# robot_control
-机器人控制和串口调试工具
 
 # robot_handle_control
 这是用与手柄控制小乌龟的测试，也可以用来控制机器人，对cpp文件和launch进行修改即可
