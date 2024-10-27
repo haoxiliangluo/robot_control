@@ -14,7 +14,7 @@
    <string>QRosApp</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../resources/images.qrc">
+   <iconset resource="../../robot_hmi/resources/images.qrc">
     <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
   </property>
   <property name="locale">
@@ -272,6 +272,13 @@
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QCheckBox" name="time_Check">
+            <property name="text">
+             <string>添加时间头</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
         <widget class="QPushButton" name="send_messger_ptn">
@@ -293,8 +300,8 @@
          <rect>
           <x>-30</x>
           <y>-60</y>
-          <width>341</width>
-          <height>431</height>
+          <width>361</width>
+          <height>451</height>
          </rect>
         </property>
         <widget class="QLabel" name="label_11">
@@ -320,7 +327,7 @@
           <rect>
            <x>60</x>
            <y>130</y>
-           <width>271</width>
+           <width>304</width>
            <height>309</height>
           </rect>
          </property>
@@ -344,9 +351,12 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="serial_port">
-                <property name="text">
-                 <string>ttyUSB0</string>
+               <widget class="QComboBox" name="serial_port_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
                 </property>
                </widget>
               </item>
@@ -543,7 +553,22 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_11"/>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QPushButton" name="report_btn">
+             <property name="text">
+              <string>刷新</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="save_btn">
+             <property name="text">
+              <string>保存串口数据</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </widget>
@@ -609,7 +634,7 @@
   </action>
  </widget>
  <resources>
-  <include location="../resources/images.qrc"/>
+  <include location="../../robot_hmi/resources/images.qrc"/>
  </resources>
  <connections>
   <connection>
