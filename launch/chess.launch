@@ -1,0 +1,10 @@
+<launch>
+
+    <arg name="width" default="1600" />
+    <arg name="height" default="1200" />
+    <node pkg="turtlesim" type="turtlesim_node" name="sim" output="screen">
+        <param name="width" value="$(arg width)" />
+        <param name="height" value="$(arg height)" />
+    </node>
+    <node name="draw_chessboard" pkg="ros_handle_control" type="draw_chessboard" output="screen"/>
+</launch>
